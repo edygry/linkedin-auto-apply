@@ -73,9 +73,9 @@ If you don't need to deploy your script to greasyfork, enable minify as you like
 
 [github actions](./.github/workflows/deploy.yaml#L36) will deploy production userscript to gh-pages branch.
 
-[example](https://github.com/Trim21/webpack-userscript-template/tree/gh-pages)
+[example](https://github.com/edygry/linkedin-auto-apply/tree/gh-pages)
 
-[deployed](https://trim21.github.io/webpack-userscript-template/index.prod.user.js)
+[deployed](https://edygry.github.io/linkedin-auto-apply/index.prod.user.js)
 
 You can auto use greasyfork's auto update function.
 
