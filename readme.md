@@ -1,5 +1,6 @@
 # LinkedIn Auto Easy Apply Button
 
+Do other things while easy applying on LinkedIn.
 
 ## dev
 
