@@ -1,6 +1,6 @@
 # LinkedIn Auto Easy Apply Button
 
-Do other things while easy applying on LinkedIn.
+Do other things while easy applying on LinkedIn. Adds button to top corner of jobs search and collection page. Will need to refresh on those pages to see the button for now.
 
 ## dev
 
