@@ -31,36 +31,28 @@ async function check_easy_apply_page() {
   ).map((el) => el.value);
   //var input_empty = form_inputs.length==0?false:true
   //var selects_empty = form_selects.length==0?false:true
-  var resume_check = document
-    .querySelector(".jobs-easy-apply-content h3")
-    ?.innerHTML.includes("Resume");
-  var volu_check = document
-    .querySelector(".jobs-easy-apply-content h3")
-    ?.innerHTML.includes("Voluntary");
-  var rev_check = document
-    .querySelector(".jobs-easy-apply-content h3")
-    ?.innerHTML.includes("Review");
-  var auth_check = document
-    .querySelector(".jobs-easy-apply-content h3")
-    ?.innerHTML.includes("Work authorization");
+  //   var resume_check = document
+  //     .querySelector(".jobs-easy-apply-content h3")
+  //     ?.innerHTML.includes("Resume");
+  //   var volu_check = document
+  //     .querySelector(".jobs-easy-apply-content h3")
+  //     ?.innerHTML.includes("Voluntary");
+  //   var rev_check = document
+  //     .querySelector(".jobs-easy-apply-content h3")
+  //     ?.innerHTML.includes("Review");
+  //   var auth_check = document
+  //     .querySelector(".jobs-easy-apply-content h3")
+  //     ?.innerHTML.includes("Work authorization");
   var error_check = !document
     .querySelector(".artdeco-inline-feedback__message")
     ?.innerText.trim();
-  console.log(
-    form_inputs,
-    form_selects,
-    resume_check,
-    volu_check,
-    rev_check,
-    auth_check,
-    error_check,
-  );
+  console.log(form_inputs, form_selects, error_check);
   const isStringsArray = (arr) =>
     arr.every(
       (i) =>
         typeof i === "string" && !(i === "") && !(i === "Select an option"),
     );
-  if (resume_check || volu_check || rev_check || auth_check || error_check) {
+  if (error_check) {
     document.querySelector(".artdeco-button--primary").click();
     return true;
   } else {
