@@ -1,3 +1,20 @@
+// ==UserScript==
+// @name        linkedin-auto-apply
+// @namespace
+// @version     0.0.1
+// @author      edygry <ed.gray@hotmail.com>
+// @source      https://github.com/edygry/linkedin-auto-apply
+// @match       *://*.linkedin.com/jobs/search/*
+// @match       *://*.linkedin.com/jobs/collections/*
+// @run-at      document-end
+// ==/UserScript==
+
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/main.js":
+/***/ (() => {
+
 function roundUp(num, precision) {
   precision = Math.pow(10, precision);
   return Math.ceil(num * precision) / precision;
@@ -142,3 +159,91 @@ s.classList.add(
 s.style =
   "top: 61px; right: 0px; position: absolute; z-index: 99999; padding: 10px;";
 document.body.appendChild(s);
+
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./src/main.js");
+/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main__WEBPACK_IMPORTED_MODULE_0__);
+// import "./style/main.less";
+//checkout homepage https://github.com/Trim21/gm-fetch for @trim21/gm-fetch
+// import GM_fetch from "@trim21/gm-fetch";
+// async function main() {
+//   console.log("script start");
+//   // cross domain requests
+//   console.log(`uuid: ${await fetchExample()}`);
+// }
+// async function fetchExample(): Promise<string> {
+//   const res = await GM_fetch("https://httpbin.org/uuid");
+//   const data = await res.json();
+//   return data.uuid;
+// }
+// main().catch((e) => {
+//   console.log(e);
+// });
+
+
+})();
+
+/******/ })()
+;
