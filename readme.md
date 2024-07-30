@@ -1,8 +1,5 @@
-# This is a project help you build userscript with webpack
+# LinkedIn Auto Easy Apply Button
 
-Just [use this git repo as a template](https://github.com/Trim21/webpack-userscript-template/generate).
-
-[中文说明](./readme.cn.md)
 
 ## dev
 
