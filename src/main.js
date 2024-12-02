@@ -73,7 +73,9 @@ async function easy_apply_loop() {
   }
 }
 async function scroll_page() {
-  var scrollbox = document.querySelector(".jobs-search-results-list");
+  var scrollbox = document.querySelector(
+    "div.YtCCjvwnvMFkeVBhkqvYpGiZrbLMCDAAWwk",
+  );
   var scrollbox_h = scrollbox.scrollHeight;
   var scrollbox_half = scrollbox_h / 2;
   scrollbox.scrollTo(0, scrollbox_h);
